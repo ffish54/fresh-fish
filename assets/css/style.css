@@ -42,6 +42,20 @@ header h1 {
     font-size: 2rem;
 }
 
+#menu-btn{
+
+    display:none;
+
+    background:none;
+    border:none;
+
+    color:white;
+    font-size:2rem;
+
+    cursor:pointer;
+
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -561,10 +575,13 @@ footer {
 
 @media (max-width: 768px) {
 
-    header .container {
+   header .container{
 
-        flex-direction: column;
-        gap: 20px;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        flex-wrap:wrap;
+
 
     }
 
@@ -585,6 +602,70 @@ footer {
     #hero p {
 
         font-size: 1rem;
+
+    }
+
+
+
+    .logo{
+
+        width:60px;
+        flex-shrink:0;
+
+    }
+
+    header h1{
+
+        font-size:1.6rem;
+        flex:1;
+        margin-left:0 15px;
+        line-height:1.2;
+
+    }
+
+    #menu-btn{
+
+        display:block;
+        margin:0;
+        padding:0;
+
+        background:none;
+        border:none;
+
+        font-size:2rem;
+        color:white;
+
+        flex-shrink:0;
+
+    }
+
+    nav{
+
+        width:100%;
+        display:none;
+         position:absolute;
+        top:100%;
+        left:0;
+
+        background:#000;
+        border-top:2px solid #123b73;
+
+    }
+
+    nav.show{
+
+        display:block;
+
+    }
+
+    nav ul{
+
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+
+        padding:20px 0;
+        gap:20px;
 
     }
 
