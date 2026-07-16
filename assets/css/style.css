@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0d0d0d;
+    color: #f5f5f5;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+header {
+    background: #000;
+    border-bottom: 2px solid #123b73;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    color: white;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: .3s;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #1d5fa7;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+
+#hero {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background:
+        linear-gradient(rgba(0,0,0,.75),
+        rgba(0,0,0,.75)),
+        url(images/hero.jpg);
+
+    background-size: cover;
+    background-position: center;
+}
+
+#hero h2 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+
+.btn,
+button {
+
+    display: inline-block;
+    padding: 15px 35px;
+
+    background: #123b73;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.btn:hover,
+button:hover {
+
+    background: #1d5fa7;
+    transform: translateY(-3px);
+
+}
+
+
+section {
+
+    padding: 80px 0;
+
+}
+
+section h2 {
+
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: white;
+
+}
+
+section p {
+
+    color: #d0d0d0;
+
+}
+
+
+#about {
+
+    background: #111;
+
+}
+
+#about p {
+
+    max-width: 850px;
+    margin: 20px auto;
+    text-align: center;
+
+}
+
+
+#services {
+
+    background: #0b0b0b;
+
+}
+
+.service-grid {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 30px;
+
+}
+
+.service {
+
+    background: #181818;
+    padding: 30px;
+
+    border-radius: 10px;
+    border: 1px solid #222;
+
+    transition: .3s;
+
+}
+
+.service:hover {
+
+    transform: translateY(-8px);
+    border-color: #1d5fa7;
+
+}
+
+.service h3 {
+
+    color: #1d5fa7;
+    margin-bottom: 15px;
+
+}
+
+#pricing {
+
+    background: #111;
+
+}
+
+table {
+
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+thead {
+
+    background: #123b73;
+
+}
+
+th,
+td {
+
+    padding: 18px;
+    border: 1px solid #333;
+    text-align: left;
+
+}
+
+tbody tr:nth-child(even) {
+
+    background: #191919;
+
+}
+
+tbody tr:hover {
+
+    background: #222;
+
+}
+
+#portfolio {
+
+    background: #0b0b0b;
+
+}
+
+.portfolio-grid {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 30px;
+
+}
+
+.portfolio-grid article {
+
+    background: #181818;
+    border-radius: 10px;
+    overflow: hidden;
+
+    transition: .3s;
+
+}
+
+.portfolio-grid article:hover {
+
+    transform: scale(1.03);
+
+}
+
+.portfolio-grid img {
+
+    width: 100%;
+    display: block;
+
+}
+
+.portfolio-grid h3 {
+
+    text-align: center;
+    padding: 20px;
+    color: white;
+
+}
+
+#why {
+
+    background: #111;
+
+}
+
+#why ul {
+
+    max-width: 700px;
+    margin: auto;
+    list-style: none;
+
+}
+
+#why li {
+
+    background: #181818;
+    margin: 15px 0;
+    padding: 20px;
+
+    border-left: 5px solid #1d5fa7;
+
+}
+
+#contact {
+
+    background: #0b0b0b;
+
+}
+
+form {
+
+    max-width: 700px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+label {
+
+    margin-top: 20px;
+    margin-bottom: 8px;
+
+}
+
+input,
+textarea {
+
+    padding: 15px;
+
+    background: #181818;
+    color: white;
+
+    border: 1px solid #333;
+    border-radius: 8px;
+
+}
+
+input:focus,
+textarea:focus {
+
+    outline: none;
+    border-color: #1d5fa7;
+
+}
+
+textarea {
+
+    resize: vertical;
+
+}
+
+button {
+
+    margin-top: 30px;
+
+}
+
+footer {
+
+    background: black;
+    text-align: center;
+
+    padding: 30px;
+
+    border-top: 2px solid #123b73;
+
+}
+
+@media (max-width: 768px) {
+
+    header .container {
+
+        flex-direction: column;
+        gap: 20px;
+
+    }
+
+    nav ul {
+
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+
+    }
+
+    #hero h2 {
+
+        font-size: 2.4rem;
+
+    }
+
+    #hero p {
+
+        font-size: 1rem;
+
+    }
+
+}
