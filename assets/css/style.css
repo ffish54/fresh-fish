@@ -239,6 +239,190 @@ tbody tr:hover {
 
 }
 
+#retainer {
+
+    background: #111;
+    padding: 80px 0;
+
+}
+
+.retainer-intro {
+
+    max-width: 900px;
+    margin: 0 auto 50px;
+    text-align: center;
+    color: #d0d0d0;
+
+}
+
+.retainer-grid {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+
+}
+
+.retainer-card {
+
+    background: #181818;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 30px;
+    transition: .3s;
+
+}
+
+.retainer-card:hover {
+
+    border-color: #1d5fa7;
+    transform: translateY(-6px);
+
+}
+
+.retainer-card h3 {
+
+    color: #1d5fa7;
+    margin-bottom: 15px;
+
+}
+
+.retainer-box {
+
+    max-width: 700px;
+    margin: auto;
+
+    background: #181818;
+    border: 2px solid #123b73;
+    border-radius: 10px;
+
+    padding: 40px;
+    text-align: center;
+
+}
+
+.retainer-box ul {
+
+    list-style: none;
+    margin: 30px 0;
+
+}
+
+.retainer-box li {
+
+    margin: 15px 0;
+    font-size: 1.1rem;
+
+}
+
+.retainer-box h2 {
+
+    color: #1d5fa7;
+    margin-bottom: 25px;
+}
+
+#seo{
+
+    background:#0b0b0b;
+    padding:80px 0;
+
+}
+
+.seo-intro{
+
+    max-width:850px;
+    margin:0 auto 50px;
+    text-align:center;
+    color:#d0d0d0;
+
+}
+
+.seo-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:35px;
+
+}
+
+.seo-card{
+
+    background:#181818;
+    border:1px solid #333;
+    border-radius:10px;
+    padding:35px;
+    transition:.3s;
+    position:relative;
+
+}
+
+.seo-card:hover{
+
+    transform:translateY(-8px);
+    border-color:#1d5fa7;
+
+}
+
+.featured{
+
+    border:2px solid #1d5fa7;
+
+}
+
+.badge{
+
+    position:absolute;
+    top:-15px;
+    right:20px;
+
+    background:#1d5fa7;
+    color:white;
+
+    padding:6px 15px;
+    border-radius:20px;
+
+    font-size:.8rem;
+    font-weight:bold;
+
+}
+
+.seo-card h3{
+
+    color:#1d5fa7;
+    margin-bottom:10px;
+
+}
+
+.seo-card h4{
+
+    font-size:2rem;
+    margin-bottom:25px;
+    color:white;
+
+}
+
+.seo-card ul{
+
+    list-style:none;
+
+}
+
+.seo-card li{
+
+    margin:15px 0;
+
+}
+
+.seo-note{
+
+    max-width:900px;
+    margin:50px auto 0;
+    text-align:center;
+    color:#cfcfcf;
+
+}
+
 #portfolio {
 
     background: #0b0b0b;
