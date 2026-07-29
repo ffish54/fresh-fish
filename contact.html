@@ -1,256 +1,184 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Contact | Fresh Fish Web Development</title>
 
-    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="assets/css/contact.css" />
+  </head>
 
-</head>
-
-<body>
-
-<header>
-
-    <div class="container">
-
-        <img src="assets/images/small_logo.png" alt="Fresh-Fish Logo" class="logo">
+  <body>
+    <header>
+      <div class="container">
+        <img
+          src="assets/images/small_logo.png"
+          alt="Fresh-Fish Logo"
+          class="logo"
+        />
 
         <h1>Fresh-Fish Web Development</h1>
 
         <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
 
-            <ul>
+            <li><a href="services.html">Services</a></li>
 
-                <li><a href="index.html">Home</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
 
-                <li><a href="services.html">Services</a></li>
-
-                <li><a href="pricing.html">Pricing</a></li>
-
-                <li><a href="contact.html" class="active">Contact</a></li>
-
-            </ul>
-
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
         </nav>
+      </div>
+    </header>
 
-    </div>
+    <main>
+      <!-- Hero -->
 
-</header>
-
-<main>
-
-    <!-- Hero -->
-
-    <section class="contact-hero">
-
+      <section class="contact-hero">
         <div class="container">
+          <h1>Let's Build Your Website</h1>
 
-            <h1>Let's Build Your Website</h1>
-
-            <p>
-
-                Whether you're starting a brand-new business or looking to
-                improve your existing website, I'd be happy to discuss your
-                ideas. Every enquiry is free and there's absolutely no
-                obligation.
-
-            </p>
-
+          <p>
+            Whether you're starting a brand-new business or looking to improve
+            your existing website, I'd be happy to discuss your ideas. Every
+            enquiry is free and there's absolutely no obligation.
+          </p>
         </div>
+      </section>
 
-    </section>
+      <!-- Contact Grid -->
 
-    <!-- Contact Grid -->
-
-    <section class="contact-section">
-
+      <section class="contact-section">
         <div class="container">
+          <div class="contact-grid">
+            <!-- Information -->
 
-            <div class="contact-grid">
+            <div class="contact-info">
+              <h2>Why Contact Me?</h2>
 
-                <!-- Information -->
+              <p>
+                I understand that creating a website can seem overwhelming if
+                you've never done it before.
+              </p>
 
-                <div class="contact-info">
+              <p>
+                I'll explain everything in plain English and help you decide
+                what your business actually needs.
+              </p>
 
-                    <h2>Why Contact Me?</h2>
+              <ul>
+                <li>✔ Free consultation</li>
 
-                    <p>
+                <li>✔ No obligation quotation</li>
 
-                        I understand that creating a website can seem
-                        overwhelming if you've never done it before.
+                <li>✔ Friendly advice</li>
 
-                    </p>
+                <li>✔ Fast response</li>
 
-                    <p>
+                <li>✔ Ongoing support available</li>
+              </ul>
 
-                        I'll explain everything in plain English and help
-                        you decide what your business actually needs.
+              <div class="response-box">
+                <h3>Typical Response Time</h3>
 
-                    </p>
-
-                    <ul>
-
-                        <li>✔ Free consultation</li>
-
-                        <li>✔ No obligation quotation</li>
-
-                        <li>✔ Friendly advice</li>
-
-                        <li>✔ Fast response</li>
-
-                        <li>✔ Ongoing support available</li>
-
-                    </ul>
-
-                    <div class="response-box">
-
-                        <h3>Typical Response Time</h3>
-
-                        <p>Usually within 24 hours.</p>
-
-                    </div>
-
-                </div>
-
-                <!-- Contact Form -->
-
-                <div class="contact-form-box">
-
-                    <h2>Send an Enquiry</h2>
-
-                    <form id="contact-form">
-
-                        <label for="name">Your Name</label>
-
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            placeholder="John Smith"
-                            required
-                        >
-
-                        <label for="email">Email Address</label>
-
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            placeholder="john@example.com"
-                            required
-                        >
-
-                        <label for="message">Tell Me About Your Project</label>
-
-                        <textarea
-                            id="message"
-                            name="message"
-                            rows="8"
-                            placeholder="Describe your business and the type of website you're looking for..."
-                            required
-                        ></textarea>
-
-                        <button type="submit">
-
-                            Send Enquiry
-
-                        </button>
-
-                    </form>
-
-                </div>
-
+                <p>Usually within 24 hours.</p>
+              </div>
             </div>
 
+            <!-- Contact Form -->
+
+            <div class="contact-form-box">
+              <h2>Send an Enquiry</h2>
+
+              <form id="contact-form">
+                <label for="name">Your Name</label>
+
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="John Smith"
+                  required
+                />
+
+                <label for="email">Email Address</label>
+
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="john@example.com"
+                  required
+                />
+
+                <label for="message">Tell Me About Your Project</label>
+
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="8"
+                  placeholder="Describe your business and the type of website you're looking for..."
+                  required
+                ></textarea>
+
+                <button type="submit">Send Enquiry</button>
+              </form>
+            </div>
+          </div>
         </div>
+      </section>
 
-    </section>
+      <!-- Process -->
 
-    <!-- Process -->
-
-    <section class="contact-process">
-
+      <section class="contact-process">
         <div class="container">
+          <h2>What Happens Next?</h2>
 
-            <h2>What Happens Next?</h2>
+          <div class="process-grid">
+            <div class="step">
+              <span>1</span>
 
-            <div class="process-grid">
+              <h3>You Get In Touch</h3>
 
-                <div class="step">
-
-                    <span>1</span>
-
-                    <h3>You Get In Touch</h3>
-
-                    <p>
-
-                        Tell me about your business and what you're looking
-                        to achieve.
-
-                    </p>
-
-                </div>
-
-                <div class="step">
-
-                    <span>2</span>
-
-                    <h3>Free Discussion</h3>
-
-                    <p>
-
-                        We'll discuss your ideas and determine the best
-                        solution for your business.
-
-                    </p>
-
-                </div>
-
-                <div class="step">
-
-                    <span>3</span>
-
-                    <h3>Receive a Quote</h3>
-
-                    <p>
-
-                        You'll receive a clear quotation with no hidden
-                        costs.
-
-                    </p>
-
-                </div>
-
+              <p>
+                Tell me about your business and what you're looking to achieve.
+              </p>
             </div>
 
+            <div class="step">
+              <span>2</span>
+
+              <h3>Free Discussion</h3>
+
+              <p>
+                We'll discuss your ideas and determine the best solution for
+                your business.
+              </p>
+            </div>
+
+            <div class="step">
+              <span>3</span>
+
+              <h3>Receive a Quote</h3>
+
+              <p>You'll receive a clear quotation with no hidden costs.</p>
+            </div>
+          </div>
         </div>
+      </section>
+    </main>
 
-    </section>
+    <footer>
+      <div class="container">
+        <p>© 2026 Fresh Fish Web Development</p>
+      </div>
+    </footer>
 
-</main>
-
-<footer>
-
-    <div class="container">
-
-        <p>
-
-            © 2026 Fresh Fish Web Development
-
-        </p>
-
-    </div>
-
-</footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script src="assets/js/script.js"></script>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
