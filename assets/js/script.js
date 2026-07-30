@@ -4,8 +4,12 @@
   });
 })();
 
+
 const menuBtn = document.getElementById("menu-btn");
 const navMenu = document.getElementById("nav-menu");
+
+console.log(menuBtn);
+console.log(navMenu);
 
 menuBtn.addEventListener("click", function () {
   navMenu.classList.toggle("show");

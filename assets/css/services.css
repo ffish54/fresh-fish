@@ -45,6 +45,18 @@ header h1 {
   font-size: 2rem;
 }
 
+#menu-btn {
+  display: none;
+
+  background: none;
+  border: none;
+
+  color: white;
+  font-size: 2rem;
+
+  cursor: pointer;
+}
+
 nav ul {
   list-style: none;
   display: flex;
@@ -72,6 +84,19 @@ nav a:hover {
 /* ========================================= */
 
 /* Services Page */
+
+#hero {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url(../images/fish_background_2.PNG);
+  background-size: cover;
+  background-position: center;
+}
 
 h2 {
   font-size: 2.5rem;

@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-align: center;
 }
 
 html {
@@ -82,12 +83,38 @@ nav a:hover {
   align-items: center;
   text-align: center;
 
+  position: relative;
+  overflow: hidden;
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  inset: -25%;
+
   background:
-    linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+    linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url(../images/fish_spiral_hero.png);
 
   background-size: cover;
   background-position: center;
+
+  animation: spinBackground 60s linear infinite;
+
+  z-index: -1;
+}
+
+
+@keyframes spinBackground {
+
+  from {
+    transform: rotate(0deg) scale(1.5);
+  }
+
+  to {
+    transform: rotate(360deg) scale(2);
+  }
+
 }
 
 #hero h2 {
