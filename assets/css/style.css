@@ -359,5 +359,13 @@ footer {
     background:
       linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
       url("../images/fish_spiral_hero.png");
+      filter: brightness(1.25);
   }
+
+  #services {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("../images/fish_background_1.PNG");
+    filter: brightness(1.25);
+}
 }
